@@ -10,4 +10,8 @@ func main(){
 	boilingF := tempconv.CToF(tempconv.BoilingC)
 	fmt.Printf("%g\n", boilingF-tempconv.CToF(tempconv.FreezingC)) // "180й °F
 //	fmt.Printf("%g\n", boilingFFreezingC)     // Ошибка компиляции: несоответствие типов
+	// Цельсий в Кельвин
+	fmt.Printf("%g\n", tempconv.CToK(tempconv.BoilingC))
+	// Кельвин в Фаренгейт
+	fmt.Printf("%g\n", tempconv.KToF(0))
 }
